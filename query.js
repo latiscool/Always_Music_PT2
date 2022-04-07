@@ -205,12 +205,11 @@ pool.connect(async (error_conexion, client, release) => {
     ? queryUpdate(nombre, rut, curso, nivel)
     : query == 'eliminar'
     ? queryDeleteRut(eRut)
-    : (console.lo <
-        g(
-          cRedB(
-            skull + '  Debe escribir una funcion existente en la app ' + skull
-          )
-        ),
+    : (console.log(
+        cRedB(
+          skull + '  Debe escribir una funcion existente en la app ' + skull
+        )
+      ),
       process.exit());
 
   //FIN POOL CONNECT
